@@ -1,10 +1,10 @@
 package com.houtrry.activitylifeciycledemo;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 /**
@@ -17,9 +17,9 @@ import android.util.Log;
  * @updateDesc $TODO$
  */
 
-public class BaseActivity extends Activity {
+public class BaseAppCompatActivity extends AppCompatActivity {
 
-    protected String TAG = BaseActivity.class.getSimpleName();
+    protected String TAG = BaseAppCompatActivity.class.getSimpleName();
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {

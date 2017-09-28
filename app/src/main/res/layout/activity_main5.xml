@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@android:color/transparent"
+    tools:context="com.houtrry.activitylifeciycledemo.Main5Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是Main5Activity的TextView"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        android:textAllCaps="false"/>
+
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示Dialog"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示别的界面的Dialog"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@id/btn6"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

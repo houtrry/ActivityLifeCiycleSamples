@@ -10,9 +10,16 @@ import android.widget.Toast;
 /**
  * 有Dialog和Toast的情况
  */
-public class Main3Activity extends BaseActivity {
+public class Main3Activity extends BaseAppCompatActivity {
 
     private AlertDialog mAlertDialog;
+
+    private static Main3Activity sInstance;
+
+
+    public static Main3Activity getInstance() {
+        return sInstance;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +52,12 @@ public class Main3Activity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 showToast(Main3Activity.this, "我是Main2Activity的Toast");
+            }
+        });
+        findViewById(R.id.btn5).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startAty(Main5Activity.class);
             }
         });
     }

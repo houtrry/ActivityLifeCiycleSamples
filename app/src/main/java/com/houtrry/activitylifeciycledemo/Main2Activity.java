@@ -8,7 +8,7 @@ import android.view.View;
 /**
  * 正常情况
  */
-public class Main2Activity extends BaseActivity {
+public class Main2Activity extends BaseAppCompatActivity {
 
 
     private static Main2Activity sInstance;

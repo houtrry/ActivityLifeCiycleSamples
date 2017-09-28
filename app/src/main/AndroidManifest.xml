@@ -20,6 +20,11 @@
         </activity>
         <activity android:name=".Main3Activity">
         </activity>
+        <activity android:name=".Main4Activity">
+        </activity>
+        <activity android:name=".Main5Activity"
+                  android:theme="@android:style/Theme.Translucent">
+        </activity>
     </application>
 
 </manifest>

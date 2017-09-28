@@ -38,6 +38,15 @@
                 android:textAllCaps="false"
                 android:onClick="click3"/>
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="屏幕旋转的情况"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:onClick="click4"/>
+
         </LinearLayout>
 
     </ScrollView>
