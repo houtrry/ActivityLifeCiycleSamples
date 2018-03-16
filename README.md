@@ -138,9 +138,9 @@ D/Main4Activity: onWindowFocusChanged---------------> 用户焦点发生变化, 
 * 屏幕旋转时, 执行的方法顺序为:  
     onPause --> onSaveInstanceState --> onStop --> onDestroy --> onDetachedFromWindow --> onCreate --> onStart --> onRestoreInstanceState -->onResume -->onAttachedToWindow --> onWindowFoucsChanged.  
 * onSaveInstanceState方法执行在onPause和onStop之间. 对应的, onRestoreInstanceState执行在onStart和onResume之间.  
-* 从B页面点击返回按钮返回到A页面或者B页面调用finish方法返回到A页面, 生命周期方法都是  
+* 从B页面点击返回按钮返回到A页面或者B页面调用finish方法返回到A页面, 方法都是  
     onPause(B) --> onRestart(A) --> onStart(A) --> onResume(A) --> onStop(B) -->onDestroy(B)
-* 从A页面跳转到B页面时, 生命周期方法是  
+* 从A页面跳转到B页面时, 方法是  
     onPause(A) --> onCreate(B) --> onStart(B) --> onResume(B) --> onSaveInstanceState(A) --> onStop(A)
 * onWindowFoucsChanged 方法执行在onResume和onPause方法之后, 在onStop之前.
 * 从A页面跳转到B页面,   
