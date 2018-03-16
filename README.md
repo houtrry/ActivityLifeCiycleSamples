@@ -148,6 +148,8 @@ D/Main4Activity: onWindowFocusChanged---------------> 用户焦点发生变化, 
 
 
 
+
+
 ## 总结
 
 * 屏幕旋转时, 执行的方法顺序为:  
