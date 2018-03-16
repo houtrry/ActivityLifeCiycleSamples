@@ -131,7 +131,22 @@ D/Main4Activity: onWindowFocusChanged---------------> 用户焦点发生变化, 
 03-16 14:17:21.487 32204-32204/com.houtrry.activitylifeciycledemo D/Main3Activity: onStart--->     用户可见   
 03-16 14:17:21.487 32204-32204/com.houtrry.activitylifeciycledemo D/Main3Activity: onResume--->    得到焦点   
 03-16 14:17:21.488 32204-32204/com.houtrry.activitylifeciycledemo D/Main3Activity: onPostResume--->   
-03-16 14:17:21.516 32204-32204/com.houtrry.activitylifeciycledemo D/Main3Activity: onWindowFocusChanged---------------> 用户焦点发生变化, hasFocus: true   
+03-16 14:17:21.516 32204-32204/com.houtrry.activitylifeciycledemo D/Main3Activity: onWindowFocusChanged---------------> 用户焦点发生变化, hasFocus: true  
+
+### MainActivity 直接锁屏
+03-16 14:35:53.203 847-847/com.houtrry.activitylifeciycledemo D/MainActivity: onPause--->     失去焦点  
+03-16 14:35:53.223 847-847/com.houtrry.activitylifeciycledemo E/MainActivity: onSaveInstanceState---------------> 开始保存界面的数据, .onSaveInstanceState(outState), outState: Bundle[{android:viewHierarchyState=Bundle[{android:views={16908290=android.view.AbsSavedState$1@e09952e, 2131427405=android.view.AbsSavedState$1@e09952e, 2131427406=android.view.AbsSavedState$1@e09952e, 2131427407=android.support.v7.widget.Toolbar$SavedState@51cb8cf, 2131427408=android.view.AbsSavedState$1@e09952e}}]}]  
+03-16 14:35:53.223 847-847/com.houtrry.activitylifeciycledemo D/MainActivity: onStop--->      用户不可见  
+03-16 14:35:54.222 847-847/com.houtrry.activitylifeciycledemo D/MainActivity: onWindowFocusChanged---------------> 用户焦点发生变化, hasFocus: false 
+
+### MainActivity 解锁屏幕
+03-16 14:36:51.213 847-847/com.houtrry.activitylifeciycledemo D/MainActivity: onRestart-----> 重新回到前台  
+03-16 14:36:51.227 847-847/com.houtrry.activitylifeciycledemo D/MainActivity: onStart--->     用户可见  
+03-16 14:36:51.229 847-847/com.houtrry.activitylifeciycledemo D/MainActivity: onResume--->    得到焦点  
+03-16 14:36:51.229 847-847/com.houtrry.activitylifeciycledemo D/MainActivity: onPostResume--->   
+03-16 14:36:51.311 847-847/com.houtrry.activitylifeciycledemo D/MainActivity: onWindowFocusChanged---------------> 用户焦点发生变化, hasFocus: true  
+
+
 
 ## 总结
 
