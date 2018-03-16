@@ -127,7 +127,6 @@ D/Main4Activity: onWindowFocusChanged---------------> 用户焦点发生变化, 
 03-16 14:17:11.338 32204-32204/com.houtrry.activitylifeciycledemo E/Main3Activity: onSaveInstanceState---------------> 开始保存界面的数据, .onSaveInstanceState(outState), outState: Bundle[{android:viewHierarchyState=Bundle[{android:views={16908290=android.view.AbsSavedState$1@3c0dff9, 2131427405=android.view.AbsSavedState$1@3c0dff9, 2131427406=android.view.AbsSavedState$1@3c0dff9, 2131427407=android.support.v7.widget.Toolbar$SavedState@d970d08, 2131427408=android.view.AbsSavedState$1@3c0dff9, 2131427422=android.view.AbsSavedState$1@3c0dff9, 2131427423=android.view.AbsSavedState$1@3c0dff9, 2131427424=android.view.AbsSavedState$1@3c0dff9, 2131427425=android.view.AbsSavedState$1@3c0dff9, 2131427426=android.view.AbsSavedState$1@3c0dff9}}]}]
 03-16 14:17:11.338 32204-32204/com.houtrry.activitylifeciycledemo D/Main3Activity: onStop--->      用户不可见
 
-
 ### Main3Activity 点击home键后，再次进入app
 03-16 14:17:21.479 32204-32204/com.houtrry.activitylifeciycledemo D/Main3Activity: onRestart-----> 重新回到前台
 03-16 14:17:21.487 32204-32204/com.houtrry.activitylifeciycledemo D/Main3Activity: onStart--->     用户可见
