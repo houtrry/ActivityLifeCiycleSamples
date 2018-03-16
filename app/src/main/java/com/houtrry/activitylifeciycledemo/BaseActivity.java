@@ -24,14 +24,14 @@ public class BaseActivity extends Activity {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
-        logd("onCreate----------------> 创建界面  -->onCreate(savedInstanceState, persistentState), savedInstanceState: " + savedInstanceState + ", persistentState: " + persistentState);
+        logd("onCreate----> 创建界面  -->onCreate(savedInstanceState, persistentState), savedInstanceState: " + savedInstanceState + ", persistentState: " + persistentState);
     }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         TAG = this.getClass().getSimpleName();
-        logd("onCreate----------------> 创建界面  -->onCreate(savedInstanceState), savedInstanceState: " + savedInstanceState);
+        logd("onCreate-----> 创建界面  -->onCreate(savedInstanceState), savedInstanceState: " + savedInstanceState);
     }
 
     @Override
@@ -43,43 +43,43 @@ public class BaseActivity extends Activity {
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState, PersistableBundle persistentState) {
         super.onRestoreInstanceState(savedInstanceState, persistentState);
-        loge("onRestoreInstanceState------------> 开始恢复界面的数据-->onRestoreInstanceState(savedInstanceState, persistentState), savedInstanceState: " + savedInstanceState + ", persistentState: " + persistentState);
+        loge("onRestoreInstanceState------> 开始恢复界面的数据-->onRestoreInstanceState(savedInstanceState, persistentState), savedInstanceState: " + savedInstanceState + ", persistentState: " + persistentState);
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        loge("onRestoreInstanceState------------> 开始恢复界面的数据-->onRestoreInstanceState(savedInstanceState), savedInstanceState: " + savedInstanceState);
+        loge("onRestoreInstanceState-----> 开始恢复界面的数据-->onRestoreInstanceState(savedInstanceState), savedInstanceState: " + savedInstanceState);
     }
 
     @Override
     public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
         super.onSaveInstanceState(outState, outPersistentState);
-        loge("onSaveInstanceState---------------> 开始保存界面的数据, onSaveInstanceState(outState, outPersistentState), outState: " + outState + ", outPersistentState: " + outPersistentState);
+        loge("onSaveInstanceState------> 开始保存界面的数据, onSaveInstanceState(outState, outPersistentState), outState: " + outState + ", outPersistentState: " + outPersistentState);
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        loge("onSaveInstanceState---------------> 开始保存界面的数据, .onSaveInstanceState(outState), outState: " + outState);
+        loge("onSaveInstanceState------> 开始保存界面的数据, .onSaveInstanceState(outState), outState: " + outState);
     }
 
     @Override
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        logd("onAttachedToWindow----------------> ");
+        logd("onAttachedToWindow------> ");
     }
 
     @Override
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        logd("onDetachedFromWindow----------------> ");
+        logd("onDetachedFromWindow-----> ");
     }
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
-        logd("onWindowFocusChanged---------------> 用户焦点发生变化, hasFocus: " + hasFocus);
+        logd("onWindowFocusChanged----> 用户焦点发生变化, hasFocus: " + hasFocus);
     }
 
     @Override
