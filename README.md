@@ -1,4 +1,4 @@
-# ActivityLifeCiycleSamples
+# ActivityLifeCycleSamples
 
 ## 运行日志
 ### MainActivity创建
